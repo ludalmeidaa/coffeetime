@@ -1,6 +1,44 @@
+
 .header {
+  background-color: #361005;
+  color: #F8F8F8;
+  font-family: "Chau Philomene One", sans-serif;
+}
 
-  $cor-fundo-header: #361005;
+.headeritens {
+  display: flex;
+  justify-content: space-between;
+}
 
+.lista {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista li {
+  border-bottom: 3px solid #F7CB60;
+}
+
+.lista-icones {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.logoinsta, .logowpp {
+  width: 40px;
+  height: 40px;
+}
+
+.logoifood {
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
 }
 
