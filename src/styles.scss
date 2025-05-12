@@ -10,9 +10,39 @@ body {
 }
 
 .btn-cardapio {
-  @apply w-fit mx-2 p-1 rounded-xl bg-[#9d5f24] font-aleppo text-[#F8F8F8];
+  @apply flex justify-center mx-3 px-3 py-3 rounded-full bg-[#9d5f24] font-aleppo text-[#F8F8F8];
 }
 
+
+//////////////////// APPLY CARDAPIO CSS ////////////////////
+
+.item-cardapio {
+  @apply flex w-[650px] h-[85px]  ms-[10%] mt-10
+}
+
+.item-cardapio__img {
+  @apply w-[80px] h-[80px] border-solid border-2 border-[#fcc84e]
+}
+
+.item-cardapio__div {
+  @apply flex flex-col ms-2
+}
+
+.item-cardapio__titulo {
+  @apply text-[14px] text-[#9d5f24] font-bold
+}
+
+.item-cardapio__preco {
+  @apply text-[12px] text-[#9d5f24] font-medium
+}
+
+.item-cardapio__descricao {
+  @apply text-[14px] mt-6 ms-6 text-[#9d5f24] font-medium
+}
+
+.item-cardapio__linha {
+  @apply w-[635px] h-[1.5px] bg-[#fcc84e] mt-7 ms-[10%]
+}
 
 $cor-fundo-global: #F7CB60;
 $cor-fundo-header: #361005;
