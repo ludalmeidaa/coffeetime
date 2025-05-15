@@ -8,17 +8,24 @@
       </button>
   </div>
 
-  <div class="w-[800px] h-[800px] ms-[22%] mt-10">
-        <div class="flex justify-center mt-5">
-          <h1 class="text-[36px] font-aleppo text-[#9d5f24]">{{ categoriaSelecionada }}</h1>
-          <div class="w-[500px] h-[1.5px] bg-[#9d5f24] mt-7 ms-10"></div>
+  <div class="w-full h-[800px] mt-[40px]">
+        <div class="flex justify-center mt-[40px]">
+          <h1 class="text-[64px] font-aleppo text-[#361003]">{{ categoriaSelecionada }}</h1>
         </div>
-        <div *ngFor="let item of getItensFiltrados()" class="item-cardapio">
-          <img [src]="item.imagemItem" alt="{{ item.nome }}" class="item-cardapio__img">
-          <div class="item-cardapio__div">
-            <h3 class="item-cardapio__titulo">{{ item.nome }}</h3>
-            <p class="item-cardapio__preco">R$ {{ item.preco }} /kg</p>
+        <div class="flex flex-wrap gap-4 justify-center mt-[40px]">
+          <div *ngFor="let item of getItensFiltrados()" class="item-cardapio">
+            <div class="relative">
+              <img [src]="item.imagemItem" alt="{{ item.nome }}" class="w-full h-50 object-cover">
+            </div>
+            <div class="item-cardapio__div">
+              <h3 class="item-cardapio__titulo">{{ item.nome }}</h3>
+              <p class="item-cardapio__descricao">{{ item.descricao }}</p>
+              <p class="item-cardapio__preco">R$ {{ item.preco }}/kg</p>
+              <button class="w-full bg-[#361003] hover:bg-[#74461A] text-white font-medium py-3 rounded-lg transition-colors">
+                Visualizar
+              </button>
+            </div>
           </div>
-          <p class="item-cardapio__descricao">{{ item.descricao }}</p>
         </div>
   </div>
+
