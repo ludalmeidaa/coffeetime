@@ -12,36 +12,26 @@ body {
 .btn-cardapio {
   @apply flex justify-center mx-3 px-3 py-3 rounded-full bg-[#361005] font-aleppo text-[#F8F8F8] transition duration-300 hover:bg-[#7d4c1b] active:scale-95;
 }
-
-
 //////////////////// APPLY CARDAPIO CSS ////////////////////
 
 .item-cardapio {
-  @apply flex w-[650px] h-[85px]  ms-[10%] mt-10
-}
-
-.item-cardapio__img {
-  @apply w-[80px] h-[80px] border-solid border-2 border-[#fcc84e]
+  @apply w-[300px] rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all
 }
 
 .item-cardapio__div {
-  @apply flex flex-col ms-2
+  @apply p-5 space-y-4
 }
 
 .item-cardapio__titulo {
-  @apply text-[14px] text-[#9d5f24] font-bold
+  @apply text-[26px] text-[#361003] font-bold
 }
 
 .item-cardapio__preco {
-  @apply text-[12px] text-[#9d5f24] font-medium
+  @apply text-[18px] text-[#361003] font-medium
 }
 
 .item-cardapio__descricao {
-  @apply text-[14px] mt-6 ms-6 text-[#9d5f24] font-medium
-}
-
-.item-cardapio__linha {
-  @apply w-[635px] h-[1.5px] bg-[#fcc84e] mt-7 ms-[10%]
+  @apply text-[18px] text-[#361003] font-medium
 }
 
 $cor-fundo-global: #F7CB60;
