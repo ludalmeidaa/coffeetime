@@ -21,11 +21,12 @@
               <h3 class="item-cardapio__titulo">{{ item.nome }}</h3>
               <p class="item-cardapio__descricao">{{ item.descricao }}</p>
               <p class="item-cardapio__preco">R$ {{ item.preco }}/kg</p>
-              <button class="w-full bg-[#361003] hover:bg-[#74461A] text-white font-medium py-3 rounded-lg transition-colors">
+              <button (click)="openModal()" class="w-full bg-[#361003] hover:bg-[#74461A] text-white font-medium py-3 rounded-lg transition-colors">
                 Visualizar
               </button>
             </div>
           </div>
         </div>
   </div>
+
 

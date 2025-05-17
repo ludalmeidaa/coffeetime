@@ -1,7 +1,9 @@
-import { Component, NgModule } from '@angular/core';
+import { Component, NgModule, TemplateRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from '../app.component';
+import { ModalComponent } from '../modal/modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 interface CardapioItem {
   nome: string;
@@ -22,6 +24,14 @@ interface CardapioItem {
 
 
 export class CardapioComponent {
+
+  constructor(public dialog: MatDialog) {}
+
+  openModal(): void {
+    this.dialog.open(ModalComponent, {
+      data: { message: 'Exemplo de modal com MatDialog!' }
+    });
+  }
 
   categorias: string[] = ['BOLOS', 'SALGADOS', 'SALGADOS GRANDES', 'DOCES', 'SOBREMESAS', 'SOBREMESAS INDIVIDUAIS'];
   categoriaSelecionada: string = 'BOLOS';
@@ -70,12 +80,12 @@ export class CardapioComponent {
 
   getItensFiltrados(): CardapioItem[] {
     return this.cardapioItem.filter(item => item.categoria === this.categoriaSelecionada);
-    }
-
-    selecionarCategoria(categoria: string): void {
-      this.categoriaSelecionada = categoria;
-    }
   }
+
+  selecionarCategoria(categoria: string): void {
+    this.categoriaSelecionada = categoria;
+  }
+}
 
 
 
