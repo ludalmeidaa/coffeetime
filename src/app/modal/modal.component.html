@@ -1,10 +1,19 @@
-<div class="h-[500px] w-[500px] m-10">
-  <h2 mat-dialog-title>Bolo de chocolate</h2>
-  <div mat-dialog-content>
-    <p>Bolo com cobertura de chocolate.</p>
-    <p>R$ 1000/kg</p>
+
+  <div class="bg-white rounded-3xl shadow-lg flex flex-col md:flex-row overflow-hidden">
+    <!-- Imagem do Produto -->
+    <div class="md:w-1/2">
+      <img src="https://www.receiteria.com.br/wp-content/uploads/bolo-de-chocolate-de-liquidificador-capa.png" alt="Bolo de Chocolate" class="object-cover w-full h-full rounded-3xl md:rounded-r-none">
+    </div>
+
+    <!-- Detalhes do Produto -->
+    <div class="p-6 flex flex-col justify-between">
+      <h2 mat-dialog-title class="text-2xl font-bold text-[#361005] mb-2">Bolo de Chocolate</h2>
+      <div mat-dialog-content>
+        <p class="text-[#361005] text-lg mb-4">Bolo com cobertura de chocolate.</p>
+        <p class="text-[#361005] text-xl font-semibold mb-6">R$ 1000/kg</p>
+      </div>
+      <button mat-button class="px-6 py-2 bg-[#361005] text-white font-medium text-lg rounded-full hover:bg-[#74461A] transition">
+       <a href="https://api.whatsapp.com/send/?phone=5511989952080&text=Olá%2C+gostaria+de+fazer+um+pedido%2Ftirar+uma+dúvida%2C+por+favor%21&type=phone_number&app_absent=0" target="_blank">COMPRAR AGORA</a>
+      </button>
+    </div>
   </div>
-  <div mat-dialog-actions>
-    <button mat-button>Comprar agora</button>
-  </div>
-</div>
