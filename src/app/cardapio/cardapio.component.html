@@ -1,5 +1,5 @@
 
-  <div class="flex w-full h-[50px] justify-center">
+  <div id="cardapio" class="flex w-full h-[50px] justify-center">
       <button *ngFor="let categoria of categorias"
           (click)="selecionarCategoria(categoria)"
           [class.active]="categoriaSelecionada === categoria"

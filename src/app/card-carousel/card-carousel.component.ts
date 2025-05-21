@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-card-carousel',
-  imports: [CommonModule],
+  imports: [CommonModule , RouterModule],
   templateUrl: './card-carousel.component.html',
   styleUrls: ['./card-carousel.component.scss']
 })

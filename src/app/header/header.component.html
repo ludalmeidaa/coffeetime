@@ -1,12 +1,12 @@
 
-<div class="header">
+<div  id="header" class="header">
   <ul class="headeritens">
     <img src="assets/icone.svg" alt="icone" class="ms-[90px]">
     <ul class="lista">
-      <a href=""><li>INÍCIO</li></a>
-      <a href=""><li>SOBRE NÓS</li></a>
-      <a href=""><li>CARDÁPIO</li></a>
-      <a href=""><li>CONTATO</li></a>
+      <a [routerLink]="['/']" fragment="header"><button>INÍCIO</button></a>
+      <a [routerLink]="['/']" fragment="sobre-nos"><button>SOBRE NÓS</button></a>
+      <a [routerLink]="['/']" fragment="cardapio"><button>CARDÁPIO</button></a>
+      <a [routerLink]="['/']" fragment="footer"><button>CONTATO</button></a>
     </ul>
   </ul>
 </div>
