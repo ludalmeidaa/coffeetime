@@ -33,7 +33,7 @@ export class CardapioComponent {
     });
   }
 
-  categorias: string[] = ['BOLOS', 'PÃES', 'SALGADOS', 'DOCES E SOBREMESAS', 'BEBIDAS QUENTES', 'BEBIDAS FRIAS'];
+  categorias: string[] = ['BOLOS', 'PÃES', 'SALGADOS', 'DOCES E SOBREMESAS', 'BEBIDAS QUENTES', 'BEBIDAS FRIAS', 'AÇAÍ'];
   categoriaSelecionada: string = 'BOLOS';
 
   cardapioItem: CardapioItem[] = [
@@ -63,14 +63,19 @@ export class CardapioComponent {
 
 
     /////// DOCES E SOBREMESAS
-    { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
-    { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
-    { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
-    { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Mini pudim', preco: '9,10', descricao: "Saboreie nosso pudim, uma sobremesa clássica com textura aveludada e sabor irresistível, ideal para qualquer ocasião.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181648_3T3A_i.jpg"},
+    { nome: 'Tapioca Coco c/ leite condensado', preco: '9,50', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Tapioca banana c/ leite condensado e canela', preco: '9,50', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Tapioca Prestigio', preco: '12,00', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Torta banofee', preco: '12,00', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Torta morangonofee', preco: '12,00', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Sonho', preco: '5,00', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Copo da felicidade', preco: '12,00', descricao: "Bolo com cobertura de chocolate.", categoria: 'DOCES E SOBREMESAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
 
 
     /////// BEBIDAS QUENTES
     { nome: 'Café expresso pequeno', preco: '6,90', descricao: "110 mls de um delicioso café expresso fresquinho.", categoria: 'BEBIDAS QUENTES', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181621_W808_i.jpg"},
+    { nome: 'Café expresso grande', preco: '6,90', descricao: "110 mls de um delicioso café expresso fresquinho.", categoria: 'BEBIDAS QUENTES', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181621_W808_i.jpg"},
     { nome: 'Café coado pequeno', preco: '3,90', descricao: "110 mls de um delicioso café coado fresquinho.", categoria: 'BEBIDAS QUENTES', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181619_V218_i.jpg"},
     { nome: 'Café coado grande', preco: '5,90', descricao: "200 mls de um delicioso café coado fresquinho", categoria: 'BEBIDAS QUENTES', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181618_4JY4_i.jpg"},
     { nome: 'Café cremoso', preco: '10,40', descricao: "200 mls de um delicioso café cremoso.", categoria: 'BEBIDAS QUENTES', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181617_JT14_i.jpg"},
@@ -85,6 +90,12 @@ export class CardapioComponent {
     { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'BEBIDAS FRIAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
     { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'BEBIDAS FRIAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
     { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'BEBIDAS FRIAS', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    
+    /////// AÇAÍ
+    { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'AÇAÍ', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'AÇAÍ', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'AÇAÍ', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
+    { nome: 'Bolo de Chocolate', preco: '1000', descricao: "Bolo com cobertura de chocolate.", categoria: 'AÇAÍ', imagemItem: "https://static.ifood-static.com.br/image/upload/t_medium/pratos/bac90564-1040-4537-92c8-bfca06f9e360/202411181630_J4X2_i.jpg"},
   ];
 
   getItensFiltrados(): CardapioItem[] {
