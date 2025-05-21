@@ -6,7 +6,7 @@ import { ModalComponent } from '../modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 
-interface CardapioItem {
+export interface CardapioItem {
   nome: string;
   preco: string;
   descricao: string;
@@ -41,9 +41,12 @@ export class CardapioComponent {
     });
   }
 
-  openModal(): void {
+  openModal(item: CardapioItem): void {
     this.dialog.open(ModalComponent, {
-      data: { message: 'Exemplo de modal com MatDialog!' }
+      data: item,
+      width: '500px',
+      height: '300px',
+      panelClass: 'full-screen-modal'
     });
   }
 
