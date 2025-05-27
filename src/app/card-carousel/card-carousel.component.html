@@ -1,4 +1,4 @@
-<div class="carousel relative z-10 overflow-visible w-full h-screen bg-fundo-carrossel py-12 px-8">
+<div class="carousel relative z-10 overflow-hidden w-full h-screen bg-fundo-carrossel py-12 px-8">
   <div class="carousel-container flex transition-transform duration-400 ease-in-out" [style.transform]="'translateX(-' + currentSlide * 100 + '%)'">
 
     <div class="card font-['Barlow'] min-w-full h-full flex flex-col lg:flex-row items-center justify-between gap-12 p-12" *ngFor="let item of cards">
@@ -7,18 +7,13 @@
         <h2 class="text-[5rem] leading-tight text-marrom-principal font-bold font-aleppo">{{ item.titulo }}</h2>
         <p class="sub text-[2rem] text-marrom-principal font-semibold font-aleppo">{{ item.subtitulo }}</p>
         <p class="preco text-[3rem] text-marrom-principal font-extrabold font-aleppo">{{ item.preco }}</p>
-        <button class="btn-cardapio px-12 py-6 text-[1.7rem] font-bold mt-8">COMPRAR AGORA</button>
+        <a href="https://api.whatsapp.com/send/?phone=5511989952080&text=Olá%2C+gostaria+de+fazer+um+pedido%2Ftirar+uma+dúvida%2C+por+favor%21&type=phone_number&app_absent=0" target="_blank"><button class="btn-cardapio px-12 py-6 text-[1.7rem] font-bold mt-8">COMPRAR AGORA</button></a>
       </div>
     </div>
-
-    <button class="nav prev" (click)="voltar()">&lt;</button>
-    <button class="nav next" (click)="avancar()">&gt;</button>
   </div>
 
 
-<button class="nav absolute top-[35%] left-[20px] -translate-y-1/2 bg-marrom-principal text-white border-none rounded-full w-14 h-14 flex items-center justify-center text-2xl cursor-pointer z-50" (click)="voltar()">&lt;
-</button>
-<button class="nav absolute top-[35%] right-[20px] -translate-y-1/2 bg-marrom-principal text-white border-none rounded-full w-14 h-14 flex items-center justify-center text-2xl cursor-pointer z-50" (click)="avancar()">&gt;
-</button>
+<button class="nav absolute top-[35%] left-[20px] -translate-y-1/2 bg-marrom-principal text-white border-none rounded-full w-14 h-14 flex items-center justify-center text-2xl cursor-pointer z-50" (click)="voltar()">&lt;</button>
+<button class="nav absolute top-[35%] right-[20px] -translate-y-1/2 bg-marrom-principal text-white border-none rounded-full w-14 h-14 flex items-center justify-center text-2xl cursor-pointer z-50" (click)="avancar()">&gt;</button>
 
 </div>
